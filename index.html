@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSOR</title>
+</head>
+<style>
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:aqua;
+        height:100vh;
+    }
+    .game{
+        width:600px;
+        padding: 20px;
+        background-color:#fff;
+    }
+    .game img{
+        width:30%;
+        margin-right:15px;
+        cursor:pointer;
+    }
+</style>
+<body>
+    <!--<button onclick="test()">click here</button>
+    <button onclick="color()">color change</button>-->
+    <div class="game">
+        <img src="https://www.clipartmax.com/png/middle/94-942198_%240-19-rock-paper-scissors-png.png" onclick="play('rock')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyJob5hcksKHEhaDgqD7g1122-WhLmEQAKVJiozWqvSjHlNr8Qy0rD2HG8ocMWBWS9QU&usqp=CAU" onclick="play('sciccors')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCmaf-HaltNtvmtB6EG8jCjkbICmErLjlvACv-XM1yXMDVN5Tk_FJOKYdlGNCYaihdBk&usqp=CAU" onclick="play('paper')">
+        <div class="choice">
+
+        </div>
+        <div class="result">
+            <p class="player">Player choice:</p>
+            <p class="computer">Computer choice</p>
+            <p class="winner">Winner choice</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
